@@ -201,9 +201,8 @@ nav ul li a:hover {
 
 }
 .news-width {
-	width: 430px;
+	width: 350px;
 	margin: 0 auto;
-	border-bottom: 1px solid #000;
 }
 .news-width h2 {
 	text-align: center;
@@ -211,8 +210,9 @@ nav ul li a:hover {
 }
 .subscribe {
 	overflow: hidden;
-	width: 430px;
+	width: 350px;
 	margin: 0 auto;
+	border-bottom: 1px solid #000;
 }
 .news input {
 	float: left;
@@ -287,11 +287,17 @@ footer .terms {
 	width: 50%;
 	float: left;
 }
-
 footer .terms ul li {
 	float: left;
 	list-style: none;
 	padding: 0 20px;
+}
+@media(max-width:730px) {
+	footer .terms {
+		width: 100%;
+		float: none;
+		padding-bottom: 35px;
+	}
 }
 footer .terms ul li a {
 	text-decoration: none;
@@ -312,6 +318,21 @@ footer .social ul li {
 	list-style: none;
 	float: left;
 	padding: 0 15px;
+}
+@media(max-width:730px) {
+	footer .social {
+		width: 100%;
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+	footer .social ul {
+	float: left;
+	}
+	footer .social ul li {
+	float: left;
+	padding: 0 20px;
+	}
 }
 .fa-brands {
 	font-size: 25px;
